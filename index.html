@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Codificador</title>
+</head>
+<body> 
+    <header>
+        <img src="/imagens/logo-alura.svg" alt="Logo da alura">
+    </header>
+    <main>
+        <section >
+            <label class="titulo-texto" for="input-texto">Digite o seu texto:</label>
+            <textarea class="input-texto" cols="45" rows="9" ></textarea>
+            <div id="id-desaparece">
+                <h6 class="informacao">
+                    <img src="imagens/icon-exclamacao.svg">Apenas letras minúsculas e sem acento.Apenas letras minúsculas e sem acento.</h6>
+            </div>
+            <div class="botoes">
+                <button class="encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+    
+        <section class="mensagem-box">
+            <textarea  class="mensagem" name="" id="" cols="20" rows="8"></textarea>
+            <div id="aparece">
+                <h2 id="mensagem-nenhuma">Nenhuma mensagem encontrada</h2>
+					<p id="mensagem-digite" class="mensagem-digite">Digite um texto que você deseja para criptografar e descriptografar.</p>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>    
+    <script src="/javascript/script.js"></script>
+</body>
+</html>

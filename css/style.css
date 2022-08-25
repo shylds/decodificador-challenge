@@ -1,0 +1,103 @@
+*{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+body{
+    background-color: #E5E5E5   ;
+}
+
+
+main{
+    display: flex;
+    margin-left:80px;
+    margin-bottom: 50px;
+}
+
+.titulo-texto{
+    color: #0A3871;
+    display: block;
+}
+
+.input-texto{
+    resize: none;
+    margin-top: 30;
+    background-color: #E5E5E5;
+    border: none;
+}
+
+.mensagem{
+    position: fixed;
+    height: 630px;
+    margin-top: 20;
+    margin-left: 80px;
+    background-image: url("../imagens/boneco.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 100px;
+    background-
+    background-size: 300px;
+    border-radius: 10px;
+    resize: none;
+}
+
+#mensagem-nenhuma{
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 400px;
+    margin-bottom: 0;
+}
+
+#mensagem-digite{
+    font-size: 16px;
+}
+
+#mensagem-nenhuma, #mensagem-digite{
+    position: relative;
+    width: 300px;
+    text-align: center;
+    margin-left: 30%;
+}
+.copiar{
+    margin-top: 10px;
+    position: relative;
+    margin-left: 27%;
+}
+.informacao{
+    margin-top: 20px;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.encriptar, .desencriptar, .copiar{
+    width: 328px;
+    border-radius: 20px;
+}
+
+.encriptar:hover, .desencriptar:hover, .copiar:hover{
+    transform: scale(1.1);
+}
+
+.encriptar{
+    background-color: #0A3871;
+    color: white;
+}
+
+.encriptar, .desencriptar{
+    margin: 0 auto; 
+}
+
+.informacao{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1073px){
+    
+}
+
+
