@@ -21,11 +21,12 @@ main{
     display: block;
 }
 
-.input-texto{
+.input-text{
     resize: none;
     margin-top: 30;
     background-color: #E5E5E5;
     border: none;
+    outline:none;
 }
 
 .mensagem{
@@ -66,6 +67,7 @@ main{
 }
 .informacao{
     margin-top: 20px;
+    font-size: 15px;
 }
 
 .botoes{
@@ -75,7 +77,7 @@ main{
 }
 
 .encriptar, .desencriptar, .copiar{
-    width: 328px;
+    width: 320px;
     border-radius: 20px;
 }
 
@@ -88,13 +90,14 @@ main{
     color: white;
 }
 
-.encriptar, .desencriptar{
+.encriptar, .desencriptar {
     margin: 0 auto; 
 }
 
-.informacao{
-    font-size: 15px;
+.copiar{
+    margin-left: 28%;
 }
+
 
 @media screen and (max-width: 1073px){
     
