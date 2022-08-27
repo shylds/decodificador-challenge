@@ -99,8 +99,25 @@ main{
 }
 
 
-@media screen and (max-width: 1073px){
-    
+@media screen and (max-width: 1290px){
+    .input-text{
+        
+        margin-right: px;
+        margin: none;
+    }
+
+    .encriptar, .desencriptar, .copiar{
+        width: 300px;
+        
+    }
+
+    .mensagem-box{
+        width: 40%;
+        margin-right: 20px;
+    }
+
+
+
 }
 
 

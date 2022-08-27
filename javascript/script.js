@@ -40,6 +40,10 @@ function desencriptar(){
 //botão de copiar o texto
 
 function copiar(){
+    
     let copyText = document.querySelector(".mensagem").innerHTML;
     navigator.clipboard.writeText(copyText);
+
+    alert("texto copiado com sucesso");
+    
 }
