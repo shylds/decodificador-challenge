@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="css/style.css" />
 
     <title>Codificador</title>
 </head>
@@ -15,12 +16,13 @@
         <img src="imagens/logo-alura.svg" alt="Logo da alura">
     </header>
     <main>
+        <div class="conteudo-principal">
         <section class="sessao1">
             <label class="titulo-texto" for="input-text">Digite o seu texto:</label>
-            <textarea  id="input-tex" class="input-text" cols="30" rows="8" ></textarea>
-            <div class="">
+            <textarea  id="input-tex" class="input-text"  ></textarea>
+            <div class="info">
                 <h6 class="informacao">
-                    <img src="imagens/icon-exclamacao.svg">Apenas letras minúsculas e sem acento.Apenas letras minúsculas e sem acento.</h6>
+                    <img src="imagens/icon-exclamacao.svg">Apenas letras minúsculas e sem acento.</h6>
             </div>
             <div class="botoes">
                 <button class="encriptar" onclick="encriptar()">Criptografar</button>
@@ -31,13 +33,14 @@
         <section class="sessao2">
             
             <div class="mensagem-box">
-                <textarea  class="mensagem" name="" id="" cols="20" rows="7"></textarea>
+                <textarea  class="mensagem" ></textarea>
                 <h2 id="mensagem-nenhuma" class="mensagem-nenhuma">Nenhuma mensagem encontrada</h2>
 					<p id="mensagem-digite" class="mensagem-digite">Digite um texto que você deseja para criptografar e descriptografar.</p>
                     <button class="copiar" onclick="copiar()">Copiar</button>
             </div>
             
         </section>
+        </div>
     </main>    
     <script src="javascript/script.js"></script>
 </body>
