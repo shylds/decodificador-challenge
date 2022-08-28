@@ -15,10 +15,10 @@
         <img src="imagens/logo-alura.svg" alt="Logo da alura">
     </header>
     <main>
-        <section >
+        <section class="sessao1">
             <label class="titulo-texto" for="input-text">Digite o seu texto:</label>
-            <textarea  id="input-tex" class="input-text" cols="45" rows="9" ></textarea>
-            <div id="id-desaparece">
+            <textarea  id="input-tex" class="input-text" cols="30" rows="8" ></textarea>
+            <div class="">
                 <h6 class="informacao">
                     <img src="imagens/icon-exclamacao.svg">Apenas letras minúsculas e sem acento.Apenas letras minúsculas e sem acento.</h6>
             </div>
@@ -28,13 +28,15 @@
             </div>
         </section>
     
-        <section class="mensagem-box">
-            <textarea  class="mensagem" name="" id="" cols="20" rows="8"></textarea>
-            <div id="aparece">
-                <h2 id="mensagem-nenhuma">Nenhuma mensagem encontrada</h2>
+        <section class="sessao2">
+            
+            <div class="mensagem-box">
+                <textarea  class="mensagem" name="" id="" cols="20" rows="7"></textarea>
+                <h2 id="mensagem-nenhuma" class="mensagem-nenhuma">Nenhuma mensagem encontrada</h2>
 					<p id="mensagem-digite" class="mensagem-digite">Digite um texto que você deseja para criptografar e descriptografar.</p>
+                    <button class="copiar" onclick="copiar()">Copiar</button>
             </div>
-            <button class="copiar" onclick="copiar()">Copiar</button>
+            
         </section>
     </main>    
     <script src="javascript/script.js"></script>

@@ -3,10 +3,9 @@ let letters = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", 
 
 //desabilitar imagem e texto
 function textBackgroundDisabled(){
-    document.getElementById("aparece").style.display = "none";
     document.querySelector(".mensagem").style.backgroundImage = "none";
-    document.querySelector(".copiar").style.marginTop = "568px";
-    document.querySelector(".copiar").style.marginLeft = "28%";
+    document.querySelector(".mensagem-nenhuma").style.visibility = "hidden";
+    document.querySelector(".mensagem-digite").style.visibility = "hidden";
 }
 
 //função de encriptar

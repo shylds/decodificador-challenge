@@ -11,9 +11,21 @@ body{
 
 
 main{
-    display: flex;
+    display: flex; 
+    margin-right: 15px;
     margin-left:80px;
     margin-bottom: 50px;
+}
+section{
+    margin: 10px;
+}
+
+.sessao1{
+    width: 75%;
+    margin-left: -70px;
+}
+.sessao2{
+    padding-right: 20px;
 }
 
 .titulo-texto{
@@ -29,24 +41,60 @@ main{
     outline:none;
 }
 
+.informacao{
+    margin-top: 20px;
+    font-size: 0.4em;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.encriptar{
+	background: #0A3871;
+	color: white;
+}
+
+.encriptar{
+    margin-right: 20px;
+}
+
+
+.encriptar, .desencriptar, .copiar{
+    width: 300px;
+    border-radius: 20px;
+}
+
+.encriptar:hover, .desencriptar:hover, .copiar:hover{ 	
+    transform: scale(1.1); //aumenta proporcionalmente ,escala todo conteudo do botão e aumenta em 20% 
+}
+
+.mensagem-box{
+    width: 350px;
+    height: 600px;
+    padding: 10px;
+    background: #FFF;
+    border-radius: 20px;
+}
+
 .mensagem{
-    position: fixed;
-    height: 630px;
+    padding: 10px;
     margin-top: 20;
-    margin-left: 80px;
+    resize: none;
+    outline:none;
+    border: none;
     background-image: url("../imagens/boneco.svg");
     background-repeat: no-repeat;
-    background-position: 5px 100px;
-    background-
-    background-size: 300px;
-    border-radius: 10px;
-    resize: none;
+    background-position: 10px 70px;
+    background-size: 100%;
 }
 
 #mensagem-nenhuma{
-    font-size: 26px;
+    font-size: 0.7em;
     font-weight: bold;
-    margin-top: 400px;
+    margin-top: 10px;
     margin-bottom: 0;
 }
 
@@ -56,68 +104,15 @@ main{
 
 #mensagem-nenhuma, #mensagem-digite{
     position: relative;
-    width: 300px;
+    width: 100%;
     text-align: center;
-    margin-left: 30%;
 }
 .copiar{
-    margin-top: 10px;
-    position: relative;
-    margin-left: 27%;
-}
-.informacao{
-    margin-top: 20px;
-    font-size: 15px;
-}
-
-.botoes{
-    display: flex;
-    flex-direction: row;
-    margin-top: 5px;
-}
-
-.encriptar, .desencriptar, .copiar{
-    width: 320px;
-    border-radius: 20px;
-}
-
-.encriptar:hover, .desencriptar:hover, .copiar:hover{
-    transform: scale(1.1);
-}
-
-.encriptar{
-    background-color: #0A3871;
-    color: white;
-}
-
-.encriptar, .desencriptar {
-    margin: 0 auto; 
-}
-
-.copiar{
-    margin-left: 28%;
-}
-
-
-@media screen and (max-width: 1290px){
-    .input-text{
-        
-        margin-right: px;
-        margin: none;
-    }
-
-    .encriptar, .desencriptar, .copiar{
-        width: 300px;
-        
-    }
-
-    .mensagem-box{
-        width: 40%;
-        margin-right: 20px;
-    }
-
-
+    margin: 0 7% ;
 
 }
 
-
+//medida de tablet 768
+@media screen and (max-width: 768px){
+   
+}
